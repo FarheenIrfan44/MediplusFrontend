@@ -16,7 +16,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--text-dark);
+   
     margin: 0;
     padding: 0;
     background: #fff;
@@ -706,6 +706,7 @@ a {
 .testimonials-content {
     position: relative;
     z-index: 3;
+    margin: 80px 0px;
 }
 
 .testimonials-header {
@@ -717,8 +718,8 @@ a {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    opacity: 0.8;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 .testimonials-header h2 {
@@ -740,13 +741,13 @@ a {
 }
 
 .client-photo {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 15px auto;
+    width: 170px;
+    height: 170px;
+    margin: 0px auto 16px auto;
     border-radius: 50%;
     overflow: hidden;
     position: relative; 
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.2); 
+  
 }
 
 .client-photo img {
@@ -757,8 +758,8 @@ a {
 
 .quote-circle {
     position: relative;
-    width: 38px; 
-    height: 38px;
+    width: 44px; 
+    height: 44px;
     left: 55%;
     top: -12%;
     background-color: #e74136; 
@@ -770,6 +771,7 @@ a {
     font-weight: 900;
     padding: 2px 0px;
     font-size: 18px; 
+    margin-bottom: -50px;
 }
 
 
@@ -779,6 +781,7 @@ a {
     margin-bottom: 20px;
     text-align: center;
     padding: 0px 24px;
+    
 }
 
 .client-name {
@@ -1134,15 +1137,20 @@ a {
     .nav-links {
         display: none;
     }
+
+
     .mobile-menu-btn {
         display: block; 
         margin-top: 10px;
+        margin-right: 10px;
+
     }
 
     .navbar .appointment-btn{
        font-size: 18px;
        padding: 0px 0px;
        background-color: black;
+       color: #888;
        
 
     }
@@ -1205,7 +1213,7 @@ a {
         height: 100%;
     }
     .feature-image img{
-        height: 40em;
+        height: 42.5em;
         width: 100%;
         object-fit: cover;
     }
@@ -1216,6 +1224,7 @@ a {
     }
     .feature-headline{
         text-align: left;
+        font-size: 30px;
     }
     .feature-text .feature-body{
         text-align: left;
@@ -1233,12 +1242,12 @@ a {
     }
 
     .feature-actions .contact-btn {
-    padding: 15px 20px;
+    padding: 17px 20px;
    
     }
 
     .feature-actions .action-btn{
-        padding: 15px 20px;
+        padding: 17px 20px;
         margin-bottom: 5px;
     }
 
@@ -1266,7 +1275,7 @@ a {
         
     }
     .doctors-section{
-        padding: 0px 20px;
+        padding: 0px 45px;
         margin-top: 100px;
     }
     .doctor-image {
@@ -1368,7 +1377,7 @@ a {
     }
 
     .blog-card{
-        margin: 0px 10px;
+        margin: 0px 30px;
     }
 
      .blog-image{
@@ -1381,6 +1390,13 @@ a {
     .testimonials-section {
         padding: 80px 0px;
     }
+    .testimonials-header .subheading {
+        font-size: 13px;
+    }
+
+    .testimonials-header h2{
+        font-size: 30px;
+    }
     .testimonial-grid {
         grid-template-columns: 1fr; 
 
@@ -1392,6 +1408,12 @@ a {
         left: 50%;
         transform: translateX(10px); 
     }
+
+   .testimonial-text {
+    padding: 0px 60px;
+  
+   }
+
 
     /* Contact Info Section */
     .info-grid {
@@ -1457,7 +1479,7 @@ a {
 
     .services{
         display: block;
-    background-color: #F8F9FA;
+        background-color: #F8F9FA;
 }
 .services-header{
     margin-left: 20px;
@@ -1473,6 +1495,7 @@ a {
     justify-content: space-evenly;
     align-items: start;
     margin-bottom: 80px;
+    gap: 20px;
    
 
 }
@@ -1493,15 +1516,18 @@ a {
 }
 
 .service-card .services-text{
-    width: 350px;
+    width: 300px;
+    margin-right: 20px;
 }
 .services-text h2{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     
 }
 .services-text p{
     margin-top: 5px;
+    color: #757575;
+    font-size: 16px;
 }
 
 
@@ -1517,7 +1543,7 @@ a {
 }
 
 .department-card i{
-    color: #035AF1;
+    color: rgba(70, 70, 255);
     margin-top: 50px;
 }
 .department-card h1{
@@ -1533,9 +1559,9 @@ a {
 }
 
 .consultation {
-  
+    display: block;
     padding: 30px 20px;
-    background-color: white; 
+    background-color: #fff; 
 }
 
 
@@ -1546,10 +1572,10 @@ a {
 
 .consultation-header .s-heading-mobile {
    
-    font-size: 14px;
-    font-weight: 500;
-    color: #007bff; 
-    letter-spacing: 0.3em;
+    font-size: 18px;
+    font-weight: 600;
+    color: #247cfa; 
+    letter-spacing: 1.5px;
 }
 
 /* Form Container */
@@ -1570,8 +1596,8 @@ a {
 .form-fields-grid input,
 .consultation-form textarea {
     flex: 1 1 calc(50% - 7.5px); 
-    padding: 18px 40px;
-    border: 0.5px solid gray;
+    padding: 15px 40px;
+    border: 1px solid #ced4da;
     border-radius: 50px;
     font-size: 18.7px;
     transition: border-color 0.3s;
