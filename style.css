@@ -1144,6 +1144,22 @@ a {
 
     /* Navigation */
     .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        top: 20px;
+        left: 0;
+        z-index: 2;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    .nav-links a{
+        color: white;
+        text-align: start;
+    }
+    .nav-links .appointment-btn{
         display: none;
     }
 
@@ -1154,6 +1170,42 @@ a {
         margin-right: 10px;
 
     }
+
+    .nav-links {
+        
+        display: flex; 
+        flex-direction: column;
+        align-items: start;
+        
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        z-index: 2;
+        background-color: black;
+        color: white;
+        width: 100%;
+        min-height: 100vh;
+        
+        
+        transform: translateX(-100%); 
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav-links.open {
+       
+        transform: translateX(0);
+    }
+    
+    .nav-links .nav-link,
+    .nav-links .appointment-btn {
+       
+        width: 100%;
+        padding: 15px 20px;
+        border-bottom: 1px solid #333; 
+        color: white;
+        text-decoration: none;
+    }
+
 
     .navbar .appointment-btn{
        font-size: 22px;

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mediplus Home Screen</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
      <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
@@ -47,6 +49,8 @@
                     <a href="#" class="nav-link">Contact</a>
                     
                     <a href="#" class="appointment-btn">Appointment</a>
+
+                    <a href="#" class="close-menu-btn">✕</a>
                 </div>
 
                 <div class="mobile-menu-btn">
@@ -54,6 +58,7 @@
                 </div>
             </div>
         </div>
+        
         </nav>
                
             <div class="hero-content">
@@ -695,7 +700,18 @@
 
     
 </body>
-</html>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('mobile-nav-links');
 
-</body>
+    if (menuButton && navLinks) {
+        menuButton.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            navLinks.classList.toggle('open');
+            // Optional: Toggle the button icon/text if needed
+        });
+    }
+});
+    </script>
 </html>
