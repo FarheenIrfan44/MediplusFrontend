@@ -50,12 +50,24 @@
                     
                     <a href="#" class="appointment-btn">Appointment</a>
 
-                    <a href="#" class="close-menu-btn">✕</a>
+                   
                 </div>
+                 <header>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
 
-                <div class="mobile-menu-btn">
-                    <a href="#" class="appointment-btn">☰ Menu</a>
-                </div>
+    <label for="menu-toggle" class="mobile-menu-btn">
+        ☰ Menu</label>
+
+    <div class="nav-links-mobile">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Department</a>
+        <a href="#" class="nav-link">Doctors</a>
+        <a href="#" class="nav-link">Blog</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+</header>
+
             </div>
         </div>
         
@@ -700,18 +712,4 @@
 
     
 </body>
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const menuButton = document.getElementById('mobile-menu-btn');
-    const navLinks = document.getElementById('mobile-nav-links');
-
-    if (menuButton && navLinks) {
-        menuButton.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default link behavior
-            navLinks.classList.toggle('open');
-            // Optional: Toggle the button icon/text if needed
-        });
-    }
-});
-    </script>
 </html>

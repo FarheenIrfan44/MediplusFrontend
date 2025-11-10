@@ -1122,6 +1122,10 @@ a {
         display: none;
         
     }
+
+    .nav-links-mobile{
+        display: none;
+    }
     
   
 
@@ -1140,29 +1144,67 @@ a {
     .top-bar .content {
          display: none;
     }
-
-
-    /* Navigation */
-    .nav-links {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        top: 20px;
-        left: 0;
-        z-index: 2;
-        background-color: black;
-        color: white;
-        width: 100%;
-    }
-    .nav-links a{
-        color: white;
-        text-align: start;
-    }
-    .nav-links .appointment-btn{
+    .nav-links{
         display: none;
     }
 
+
+    /* Navigation 
+    */
+
+    .menu-toggle-checkbox {
+    display: none;
+}
+
+
+.nav-links-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+    background-color: black;
+    color: #888;
+    width: 100%;
+    margin-top: 60px;
+    
+   
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none; 
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+}
+
+
+.menu-toggle-checkbox:checked ~ .nav-links-mobile {
+    transform: translateY(0); 
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+
+/* --- Your Provided Button Styles (Modified slightly for the label) --- */
+.mobile-menu-btn {
+    display: block; 
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer; 
+    font-size: 22px; 
+    line-height: 1;
+    color: #888;
+}
+
+
+.nav-links-mobile a{
+    color: white;
+    text-align: start;
+    margin-bottom: 15px;
+    padding: 10px 20px; 
+    width: 100%; 
+}
+    
 
     .mobile-menu-btn {
         display: block; 
@@ -1171,40 +1213,6 @@ a {
 
     }
 
-    .nav-links {
-        
-        display: flex; 
-        flex-direction: column;
-        align-items: start;
-        
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        z-index: 2;
-        background-color: black;
-        color: white;
-        width: 100%;
-        min-height: 100vh;
-        
-        
-        transform: translateX(-100%); 
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .nav-links.open {
-       
-        transform: translateX(0);
-    }
-    
-    .nav-links .nav-link,
-    .nav-links .appointment-btn {
-       
-        width: 100%;
-        padding: 15px 20px;
-        border-bottom: 1px solid #333; 
-        color: white;
-        text-decoration: none;
-    }
 
 
     .navbar .appointment-btn{
