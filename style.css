@@ -16,7 +16,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-   
     margin: 0;
     padding: 0;
     background: #fff;
@@ -31,13 +30,14 @@ a {
 .top-bar {
     background-color: var(--primary-blue);
     color: white;
-    padding: 2px 0px;
+    padding: 4px 0px;
     font-size: 17px;
 
 }
 
 .top-bar .content {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     height: var(--top-bar-height);
@@ -81,26 +81,28 @@ a {
 .hero-section .navbar .content {
     display: flex;
     justify-content: space-between;
-    padding: 20px 150px 10px 130px;
+    padding: 10px 150px 20px 130px;
     background-color: hsla(0, 2%, 74%, 0.4);
    
 }
 
 .hero-section .logo {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
     color: black;
+   
    
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 24px; 
+    gap: 30px; 
 }
 
 .nav-link {
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     color: black;
     transition: color 0.3s;
 }
@@ -946,7 +948,7 @@ a {
     height: fit-content;
     background-color: #f8f9f8; 
     padding: 50px 20px;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 .form-group {
@@ -1147,7 +1149,7 @@ a {
     }
 
     .navbar .appointment-btn{
-       font-size: 18px;
+       font-size: 22px;
        padding: 0px 0px;
        background-color: black;
        color: #888;
